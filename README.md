@@ -59,7 +59,7 @@ Este software contiene multiples funciones para un usuarios
 >RUTA_BASE_DE_DATOS = "tienda.json"
 >datos = cargar_datos(RUTA_BASE_DE_DATOS)
 >#Menu para escoger que producto se va a añadir
-
+```
 > [!IMPORTANT]
 > no se busca continuar con el proyecto o solucionar problemas que presenta actualmente en base a esta informacion no recibira actualizaciones el repositorio
 >
