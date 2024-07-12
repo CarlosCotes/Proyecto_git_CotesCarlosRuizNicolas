@@ -18,7 +18,7 @@ while True:
                     actualizar_ciudad(datos)
                 elif opcion == "3":
                     print("--------------------------------------------------")
-                    print("3")
+                    buscador_ciudades()
                 elif opcion == "0":
                     print("--------------------------------------------------")
                     print("Saliendo")
