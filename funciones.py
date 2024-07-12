@@ -14,7 +14,7 @@ def registrar_ciudad(datos):
     ciudad["pais"] = input("Ingrese el pais: ")
     
 
-    datos["clientes"].append(ciudades)
+    datos["clientes"].append(ciudad)
     print("¡Cliente registrado con éxito!")
     return datos
 
