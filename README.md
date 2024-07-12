@@ -78,8 +78,8 @@ Este software contiene multiples funciones para un usuarios
 > [!WARNING]  
 > 
 >### Desarrolladores
->* [Carlos Cotes](https://gist.github.com/CarlosCotes)
->* [Nicolas Ruiz](https://gist.github.com/Nicolas-ruizg)
+>* [Carlos Cotes](https://github.com/CarlosCotes)
+>* [Nicolas Ruiz](https://github.com/Nicolas-ruizg)
 >
 ***
 > [!NOTE]
