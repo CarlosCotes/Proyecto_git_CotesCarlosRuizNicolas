@@ -1,7 +1,7 @@
 from datos import*
 from funciones import*
 
-RUTA_BASE_DE_DATOS = "ciudades.json"
+RUTA_BASE_DE_DATOS = "ciudad.json"
 
 
 datos = cargar_datos(RUTA_BASE_DE_DATOS)
@@ -19,17 +19,14 @@ while True:
                 elif opcion == "3":
                     print("--------------------------------------------------")
                     print("3")
-                elif opcion != int:
-                    print("--------------------------------------------------")
-                    print("opcion invalida")
                 elif opcion == "0":
                     print("--------------------------------------------------")
                     print("Saliendo")
-                    
-
                     print("Gracias por usar GEOCIUD")
                     break
-
+                elif opcion != int:
+                    print("--------------------------------------------------")
+                    print("opcion invalida")
 
 
 
