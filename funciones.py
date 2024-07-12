@@ -22,8 +22,8 @@ def registrar_ciudad(datos):
 def actualizar_ciudad(datos):
     datos=dict(datos)
     codigo =input("Ingrese el codigo postal: ")
-    for i in range(len(datos["ciudades"])):
-        if datos["ciudades"][i]["cod"]== codigo:
+    for i in range(len(datos["ciudad"])):
+        if datos["ciudad"][i]["cod"]== codigo:
 
 
             while True:
@@ -36,20 +36,20 @@ def actualizar_ciudad(datos):
                 opc=input("ingrese la opcion: ")
 
                 if opc=="1":
-                    datos["ciudades"][i]["nombre"]= input("ingrese el nuevo nombre: ")
+                    datos["ciudad"][i]["nombre"]= input("ingrese el nuevo nombre: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")
                 elif opc== "2":
-                    datos["ciudades"][i]["cod"]=input("ingrese el nuevo codigo postal: ")
+                    datos["ciudad"][i]["cod"]=input("ingrese el nuevo codigo postal: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")
 
                 elif opc=="3":
-                    datos["ciudades"][i]["poblacion"]=input("ingrese la nueva poblacion: ")
+                    datos["ciudad"][i]["poblacion"]=input("ingrese la nueva poblacion: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")
                 elif opc=="4":
-                    datos["ciudades"][i]["pais"]=input("ingrese el nuevo pais: ")
+                    datos["ciudad"][i]["pais"]=input("ingrese el nuevo pais: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")    
                 elif opc=="0":
@@ -74,16 +74,16 @@ def menu_principal():
 def buscador_ciudades():
     nombre = input("Ingrese el nombre de la ciudad que desea buscar: ")
     
-    datos_ciudades=cargar_datos("l")
-    for ciudades in datos_ciudades["ciudades"]:
-        if (ciudades["nombre"]).lower()==nombre.lower():
+    datos_ciudad=cargar_datos("ciudad")
+    for ciudad in datos_ciudad["ciudad"]:
+        if (ciudad["nombre"]).lower()==nombre.lower():
             print("\n***************************************************************\n")
-            print("Se encontrò la ciudad de nombre: " + ciudades["nombre"] + ", los datos de esta ciudad son:")
-            print("Nombre: " + ciudades["nombre"])
-            print("codigo postal: " + ciudades["cod"])
-            print("Poblacion: " + (ciudades["poblacion"]))
-            print("Pais: " + ciudades["pais"])
-            return ciudades["nombre"]
+            print("Se encontrò la ciudad de nombre: " + ciudad["nombre"] + ", los datos de esta ciudad son:")
+            print("Nombre: " + ciudad["nombre"])
+            print("codigo postal: " + ciudad["cod"])
+            print("Poblacion: " + (ciudad["poblacion"]))
+            print("Pais: " + ciudad["pais"])
+            return ciudad["nombre"]
     print(f"No se encontro ninguna ciudad con ese nombre: {nombre}")
     nombre=False
     return nombre
