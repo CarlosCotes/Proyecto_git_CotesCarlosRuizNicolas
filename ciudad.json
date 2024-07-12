@@ -11,6 +11,12 @@
             "cod": 80001,
             "poblacion": "1.206 millones",
             "pais": "colombia"
+        },
+        {
+            "nombre": "Bucaramanga",
+            "cod": 10010,
+            "poblacion": "1.300 millones",
+            "pais": "colombia"
         }
     ]
 }

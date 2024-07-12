@@ -23,7 +23,7 @@ def actualizar_ciudad(datos):
     datos=dict(datos)
     codigo =input("Ingrese el codigo postal: ")
     for i in range(len(datos["ciudades"])):
-        if datos["ciudades"][i]["cod"]== codigo:
+        if datos["ciudad"][i]["cod"]== codigo:
 
 
             while True:
@@ -36,20 +36,20 @@ def actualizar_ciudad(datos):
                 opc=input("ingrese la opcion: ")
 
                 if opc=="1":
-                    datos["ciudades"][i]["nombre"]= input("ingrese el nuevo nombre: ")
+                    datos["ciudad"][i]["nombre"]= input("ingrese el nuevo nombre: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")
                 elif opc== "2":
-                    datos["ciudades"][i]["cod"]=input("ingrese el nuevo codigo postal: ")
+                    datos["ciudad"][i]["cod"]=input("ingrese el nuevo codigo postal: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")
 
                 elif opc=="3":
-                    datos["ciudades"][i]["poblacion"]=input("ingrese la nueva poblacion: ")
+                    datos["ciudad"][i]["poblacion"]=input("ingrese la nueva poblacion: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")
                 elif opc=="4":
-                    datos["ciudades"][i]["pais"]=input("ingrese el nuevo pais: ")
+                    datos["ciudad"][i]["pais"]=input("ingrese el nuevo pais: ")
                     print("se guardo con exito")
                     print("------------------------------------------------")    
                 elif opc=="0":
