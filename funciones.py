@@ -56,7 +56,7 @@ def actualizar_ciudad(datos):
             break
     return datos
 
-    def menu_principal():
+def menu_principal():
     print("--------------------------------------------------")
     print("Bienvenido a GEOCIUD")
     print("--------------------------------------------------")
