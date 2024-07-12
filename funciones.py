@@ -70,27 +70,3 @@ def menu_principal():
     print("2. editar la informacion de una ciudad")
     print("3. buscar ciudad")
     print("--------------------------------------------------")
-
-    while True:
-                
-
-            opcion = str(input("Ingrese la opcion que desea: "))
-            if opcion == "1":
-                print("--------------------------------------------------")
-                registrar_ciudad(datos) 
-            elif opcion == "2":
-                print("--------------------------------------------------")
-                actualizar_ciudad(datos)
-            elif opcion == "3":
-                print("--------------------------------------------------")
-                print("3")
-            elif opcion != int:
-                print("--------------------------------------------------")
-                print("opcion invalida")
-            elif opcion == "0":
-                print("--------------------------------------------------")
-                print("Saliendo")
-                print("Gracias por usar GEOCIUD")
-                break
-
-print(menu_principal())
