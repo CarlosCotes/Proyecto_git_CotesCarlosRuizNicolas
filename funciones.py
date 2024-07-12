@@ -70,3 +70,20 @@ def menu_principal():
     print("2. editar la informacion de una ciudad")
     print("3. buscar ciudad")
     print("--------------------------------------------------")
+    
+def buscador_ciudades():
+    nombre = input("Ingrese el nombre de la ciudad que desea buscar: ")
+    
+    datos_ciudades=cargar_datos("l")
+    for ciudades in datos_ciudades["ciudades"]:
+        if (ciudades["nombre"]).lower()==nombre.lower():
+            print("\n***************************************************************\n")
+            print("Se encontrò la ciudad de nombre: " + ciudades["nombre"] + ", los datos de esta ciudad son:")
+            print("Nombre: " + ciudades["nombre"])
+            print("codigo postal: " + ciudades["cod"])
+            print("Poblacion: " + (ciudades["poblacion"]))
+            print("Pais: " + ciudades["pais"])
+            return ciudades["nombre"]
+    print(f"No se encontro ninguna ciudad con ese nombre: {nombre}")
+    nombre=False
+    return nombre
