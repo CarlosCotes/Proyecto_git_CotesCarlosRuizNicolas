@@ -1,3 +1,23 @@
+from datos import*
+def registrar_ciudad(datos):
+    datos = dict(datos)
+    ciudad = {}
+    ciudad["nombre"] = input("Ingrese el nombre de la ciudad : ")
+    while True:
+        try:
+            ciudad["cod"] = int(input("Ingrese el codigo postal: "))
+            break
+        except ValueError:
+            print("codigo postal invalido . Por favor, ingrese un codigo válido.")
+                    
+    ciudad["poblacion"] = input("Ingrese la poblacion total de la ciudad: ")
+    ciudad["pais"] = input("Ingrese el pais: ")
+    
+
+    datos["clientes"].append(ciudades)
+    print("¡Cliente registrado con éxito!")
+    return datos
+
 def actualizar_ciudad(datos):
     datos=dict(datos)
     codigo =input("Ingrese el codigo postal: ")
